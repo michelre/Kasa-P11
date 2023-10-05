@@ -1,11 +1,13 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Header() {
   return (
   
       <header>
           <Link to="/">
-              <img id="header-logo" src={Logo} alt="Logo Kasa" />
+              LOGO
+              {/*<img id="header-logo" src={Logo} alt="Logo Kasa" />*/}
           </Link>
   
           <nav>
