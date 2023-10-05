@@ -1,20 +1,14 @@
-import Accordeon from './components/Accordeon.js'
-import Thumbnail from './components/Thumbnail.js'
-import Tag from './components/Tag.jsx'
+import './App.css'
+import Header from "./components/Header.jsx";
+//import { Link } from "react-router-dom";
 
 function App() {
 
-    return (
-        <>
-            <Accordeon />
-            <Thumbnail/>
-            <Tag name="Cozy"/>
-            <Tag name="Canal"/>
-            <Tag name="Toto"/>
-        </>
-
-    )
-
+  return (
+    <div>
+      <Header />
+    </div>
+  )
 }
 
 export default App
