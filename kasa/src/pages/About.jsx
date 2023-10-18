@@ -1,5 +1,10 @@
+import Header from "../components/Header.jsx";
+
 const About = () => {
-    return <div>About</div>
+    return <div>
+        <Header/>
+        About
+    </div>
 }
 
 export default About

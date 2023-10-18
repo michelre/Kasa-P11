@@ -1,25 +1,32 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
-
 import {
   createBrowserRouter,
   RouterProvider,
-} from 'react-router-dom'
-import Home from './pages/Home.jsx'
+} from "react-router-dom";
 import About from './pages/About.jsx'
+import Home from './pages/Home.jsx'
+import Logement from './pages/Logement.jsx'
 
-const router = createBrowserRouter() ([
-
+const router = createBrowserRouter([
   {
-    path
-  }
+    path: "/",
+    element: <Home />,
+  },
+    {
+    path: "/:id",
+    element: <Logement />,
+  },
+    {
+    path: "/about",
+    element: <About />,
+  },
+]);
 
-])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
