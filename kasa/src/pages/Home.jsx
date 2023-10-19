@@ -1,5 +1,6 @@
 import Header from "../components/Header.jsx";
 import Thumbnail from "../components/Thumbnail.jsx";
+import Footer from "../components/Footer.jsx";
 import {useEffect, useState} from "react";
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
             id={logement.id}
             name={logement.title}
         />)}
+        <Footer/>
 
     </div>
 }
