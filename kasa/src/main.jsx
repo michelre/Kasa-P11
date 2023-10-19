@@ -8,6 +8,7 @@ import {
 import About from './pages/About.jsx'
 import Home from './pages/Home.jsx'
 import Logement from './pages/Logement.jsx'
+import Error from './pages/404.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,12 +16,16 @@ const router = createBrowserRouter([
     element: <Home />,
   },
     {
-    path: "/:id",
+    path: "/logements/:id",
     element: <Logement />,
   },
     {
     path: "/about",
     element: <About />,
+  },
+        {
+    path: "*",
+    element: <Error />,
   },
 ]);
 
