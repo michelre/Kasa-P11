@@ -174,7 +174,28 @@ footer p {
 
 
 
+/* COMPOSANT : BANNER */
 
+.banner {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  border-radius: 24px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 32px;
+  background-color: rgb(200, 204, 208);
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.banner-title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 500;
+  z-index: 1;
+}
 
 
 

@@ -1,4 +1,5 @@
 import Header from "../components/Header.jsx";
+import Banner from '../components/Banner.jsx';
 import Thumbnail from "../components/Thumbnail.jsx";
 import Footer from "../components/Footer.jsx";
 import {useEffect, useState} from "react";
@@ -17,6 +18,7 @@ const Home = () => {
 
     return <div>
         <Header/>
+            <Banner/>
             <div className="card-container">
                 {logements.map((logement) => <Thumbnail
                     key={logement.id}
