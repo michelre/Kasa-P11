@@ -31,6 +31,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-top: 3%;
+  padding-bottom: 5%;
 }
 
 nav {
@@ -87,8 +88,7 @@ footer p {
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 5% 0;
-
+  padding-bottom: 5%;
 }
 
 .error-header {
@@ -120,6 +120,57 @@ footer p {
 
 
 
+/* COMPOSANT : THUMBNAIL CARD */
+
+.card-container {
+  width: 80%;
+  margin: auto;
+  grid-column-gap: 1%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(7,1fr);
+  justify-items: center;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+  border-radius: 24px;
+  padding: 48px;
+}
+
+.card {
+  width: 380px;
+  height: 300px;
+  padding-bottom: 2.1rem;
+  color: white;
+  position: relative;
+  
+}
+
+.card-title {
+  position: absolute;
+  bottom: 21px;
+  margin-right: 1.25rem;
+  text-align: start;
+  background: linear-gradient(rgba(7, 7, 7, 0), rgba(7, 7, 7, 0.3));
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+.card-image {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-title h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
 
 
 

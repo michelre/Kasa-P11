@@ -8,7 +8,7 @@ const Error = () => {
       
             <div class="error-container">
                 <h1 class="error-header">404</h1>
-                <p class="error-p">Oups! La page que vous demandez n'existe pas.</p>
+                <p class="error-p">Oups ! La page que vous demandez n'existe pas.</p>
                 <Link to="/" class="error-link">Retourner sur la page d'accueil</Link>
             </div>
 

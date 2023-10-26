@@ -17,11 +17,15 @@ const Home = () => {
 
     return <div>
         <Header/>
-        {logements.map((logement) => <Thumbnail
-            key={logement.id}
-            id={logement.id}
-            name={logement.title}
-        />)}
+            <div className="card-container">
+                {logements.map((logement) => <Thumbnail
+                    key={logement.id}
+                    id={logement.id}
+                    name={logement.title}
+                    cover={logement.cover}
+                    title={logement.title}
+                />)}
+            </div>
         <Footer/>
 
     </div>
