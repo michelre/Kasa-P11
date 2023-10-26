@@ -1,10 +1,17 @@
 import {Link} from "react-router-dom";
 
-const Thumbnail = ({id, name}) => {
+const Thumbnail = ({id, cover, title}) => {
 
-    return <Link to={`logements/${id}`}>
-        {name}
-    </Link>
+    return (
+        <article className="card">
+            <Link to={`logements/${id}`} className="card_-link">
+                <img className="card-image" src={cover} /*alt={title}*/ />
+                <div className="card-title">
+                    <h3>{title}</h3>
+                </div>
+            </Link>
+        </article>
+    )
 }
 
 export default Thumbnail
