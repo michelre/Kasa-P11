@@ -11,11 +11,11 @@ const Banner = ({image, title, alt}) => {
 }
 */
 
-const Banner = ({image, title, alt}) => {
+const Banner = ({image, alt, title}) => {
     return (
         <div className="banner">
-        <h1 className="banner-title">Chez vous, partout et ailleurs</h1>
-            <img className="banner-image" />
+        <h1 className="banner-title">{title}</h1>
+            {(image) ? <img className="banner-image" src={image}/> : ''}
         </div>
     )
 }
