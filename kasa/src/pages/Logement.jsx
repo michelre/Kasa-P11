@@ -1,6 +1,7 @@
 import Header from "../components/Header.jsx";
 import {useParams} from "react-router-dom";
 import Accordeon from "../components/Accordeon.jsx";
+// import Author from "../components/Author.jsx";
 import Tags from "../components/Tags";
 import {useEffect, useState} from "react";
 
@@ -40,6 +41,8 @@ const Logement = () => {
         </Accordeon>
 
         Logement {params.id}
+
+
 
         <div className="logement-tags">
             {logement?.tags.map((tag) => (
