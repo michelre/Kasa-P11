@@ -25,6 +25,19 @@ const Logement = () => {
 
     return <div>
         <Header/>
+
+        <section className="informations">
+            <div className="title-location">
+                <h1>{logement.title}</h1>
+                <h2>{logement.location}</h2>
+            </div>
+            <div className="logement-tags">
+                {logement?.tags.map((tag) => (
+                    <Tags name={tag} key={tag}/>
+            ))}
+            </div>
+        </section>
+
         <Accordeon
             title={'Equipements'}
         >
@@ -42,13 +55,6 @@ const Logement = () => {
 
         Logement {params.id}
 
-
-
-        <div className="logement-tags">
-            {logement?.tags.map((tag) => (
-                <Tags name={tag} key={tag}/>
-            ))}
-        </div>
     </div>
 
 

@@ -225,6 +225,30 @@ footer p {
 
 
 
+
+/* PAGE : LOGEMENT */
+
+.title-location h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.title-location h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+
+
+
+
+
+
+
+
+
 /* STYLE INITIAL
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
