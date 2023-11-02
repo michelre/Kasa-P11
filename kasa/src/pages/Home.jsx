@@ -18,7 +18,10 @@ const Home = () => {
 
     return <div>
         <Header/>
-            <Banner/>
+            <Banner
+                img={''}
+                title="Chez vous, partout et ailleurs"
+            />
             <div className="card-container">
                 {logements.map((logement) => <Thumbnail
                     key={logement.id}
