@@ -199,6 +199,56 @@ footer p {
 
 
 
+/* COMPOSANT : TAGS */ 
+
+.tag {
+  display: flex;
+  height: 24px;
+  align-items: center;
+  background-color: #ff6060;
+  border-radius: 8px;
+  justify-content: center;
+  min-width: 112px;
+  padding: 0 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.tag-name {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+/* PAGE : LOGEMENT */
+
+.title-location h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.title-location h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+
+
+
+
+
+
+
+
+
 /* STYLE INITIAL
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
