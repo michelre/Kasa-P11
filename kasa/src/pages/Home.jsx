@@ -19,7 +19,7 @@ const Home = () => {
         <div>
             <Header />
             <Banner
-                image={'../assets/hero-banner.jpg'}
+                image={'../src/assets/hero-banner.jpg'}
                 title="Chez vous, partout et ailleurs"
             />
             <div className="card-container">

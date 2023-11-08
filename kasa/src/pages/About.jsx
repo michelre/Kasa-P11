@@ -7,7 +7,7 @@ const About = () => {
     return <div>
         <Header/>
         <Banner
-            image={'../assets/about_banner.jpg'}
+            image={'../src/assets/about_banner.jpg'}
         />
         <Tags/>
         <Footer/>

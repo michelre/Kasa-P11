@@ -176,6 +176,7 @@ footer p {
 
 /* COMPOSANT : BANNER */
 
+/*
 .banner {
   display: flex;
   align-items: center;
@@ -189,12 +190,32 @@ footer p {
   margin: auto;
   margin-bottom: 5%;
 }
+*/
+
+.banner {
+  position: relative;
+  height: auto;
+  border-radius: 25px;
+
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
+}
 
 .banner-title {
-  color: #fff;
   font-size: 48px;
   font-weight: 500;
-  z-index: 1;
+
+  position: relative;
+  bottom: 180px;
+  text-align: center;
+  background-color: rgba(0,0,0,.3);
+}
+
+.banner-image {
+  background-color: rgba(0,0,0,.3);
+  object-fit: contain;
 }
 
 
