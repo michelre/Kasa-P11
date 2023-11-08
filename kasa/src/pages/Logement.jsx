@@ -44,18 +44,17 @@ const Logement = () => {
         </section>
 
         <Accordeon
-            title={'Equipements'}
+            title={'Description'}
         >
-            <ul>
-                <li>Equipement 1</li>
-                <li>Equipement 2</li>
-            </ul>
+            <p>{logement.description}</p>
         </Accordeon>
 
         <Accordeon
-            title={'Description'}
+            title={'Equipements'}
         >
-            <p>Ceci est la description</p>
+            <ul>
+                <li>{logement.equipments}</li>
+            </ul>
         </Accordeon>
 
         <Stars rating={logement.rating}/>
