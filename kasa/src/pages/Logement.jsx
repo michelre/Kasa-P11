@@ -1,8 +1,8 @@
 import Header from "../components/Header.jsx";
 import {useParams} from "react-router-dom";
 import Accordeon from "../components/Accordeon.jsx";
-// import Author from "../components/Author.jsx";
-// import Stars from '../components/Stars.jsx';
+import Author from "../components/Author.jsx";
+import Stars from '../components/Stars.jsx';
 import Tags from "../components/Tags";
 import {useEffect, useState} from "react";
 
@@ -24,7 +24,11 @@ const Logement = () => {
             })
     }, [])
 
-    return <div>
+    /*if(!logement){
+        return null
+    }*/
+
+    return logement && <div>
         <Header/>
 
         <section className="informations">
@@ -53,6 +57,10 @@ const Logement = () => {
         >
             <p>Ceci est la description</p>
         </Accordeon>
+
+        <Stars rating={logement.rating}/>
+        <Author name={logement.host.name} picture={logement.host.picture}/>
+
 
         Logement {params.id}
 
