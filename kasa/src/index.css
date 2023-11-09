@@ -247,6 +247,44 @@ footer p {
 
 
 
+/* COMPOSANT : ACCORDEON */
+
+.accordeon {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+.accordeon-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #000;
+  background-color: #ff6060;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 12px 24px;
+  z-index: 10;
+
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+.accordeon-description {
+  background-color: #f6f6f6;
+  border-radius: 0 0 12px 12px;
+  padding: 32px 20px;
+  margin: 0;
+  color: #ff6060;
+  font-size: 24px;
+
+}
+
+
+
 /* PAGE : LOGEMENT */
 
 .title-location h1 {
