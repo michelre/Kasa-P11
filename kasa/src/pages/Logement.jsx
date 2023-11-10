@@ -35,34 +35,35 @@ const Logement = () => {
             <div className="title-location">
                 <h1>{logement.title}</h1>
                 <h2>{logement.location}</h2>
+            
+                <div className="logement-tags">
+                    {logement?.tags.map((tag) => (
+                        <Tags name={tag} key={tag}/>
+                ))}
+                </div>
             </div>
-            <div className="logement-tags">
-                {logement?.tags.map((tag) => (
-                    <Tags name={tag} key={tag}/>
-            ))}
+            <div className="title-author">
+                <Author name={logement.host.name} picture={logement.host.picture}/>
+                <Stars rating={logement.rating}/>
             </div>
         </section>
 
-        <Accordeon
-            title={'Equipements'}
-        >
-            <ul>
-                <li>Equipement 1</li>
-                <li>Equipement 2</li>
-            </ul>
-        </Accordeon>
+        <section className="informations-logement">
+            <Accordeon
+                title={'Description'}
+            >
+                <p>{logement.description}</p>
+            </Accordeon>
 
-        <Accordeon
-            title={'Description'}
-        >
-            <p>Ceci est la description</p>
-        </Accordeon>
+            <Accordeon
+                title={'Equipements'}
+            >
+                <ul>
+                    <li>{logement.equipments}</li>
+                </ul>
+            </Accordeon>
+        </section>
 
-        <Stars rating={logement.rating}/>
-        <Author name={logement.host.name} picture={logement.host.picture}/>
-
-
-        Logement {params.id}
 
     </div>
 

@@ -2,7 +2,7 @@ import React from 'react';
 import fullStar from '../assets/full_star.svg';
 import emptyStar from '../assets/empty_star.svg';
 
-// Ajouter un call sur le fichier JSON pour récupérer les datas RATING
+// Méthode 1 : Boucle
 
 /*const Stars = ({rating}) => {
     const stars = []
@@ -21,6 +21,8 @@ import emptyStar from '../assets/empty_star.svg';
     );
 };*/
 
+
+// Méthode 2
 
 const Stars = ({rating}) => {
 

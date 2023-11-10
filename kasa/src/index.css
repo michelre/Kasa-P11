@@ -3,6 +3,8 @@
 
 :root {
   font-family: 'Montserrat', sans-serif;
+  width: 80%;
+  margin: auto;
 }
 
 
@@ -24,7 +26,6 @@ a:hover {
 /* COMPOSANT : HEADER */
 
 header {
-  width: 80%;
   height: 68px;
   margin: auto;
   display: flex;
@@ -37,14 +38,16 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  width: 30%;
 }
 
 nav a {
   font-size: 24px;
   font-weight: 500;
   color: #FF6060;
-  margin-right: 50px;
 }
+
+
 
 nav a:hover {
   text-decoration: underline;
@@ -176,6 +179,7 @@ footer p {
 
 /* COMPOSANT : BANNER */
 
+/*
 .banner {
   display: flex;
   align-items: center;
@@ -189,12 +193,32 @@ footer p {
   margin: auto;
   margin-bottom: 5%;
 }
+*/
+
+.banner {
+  position: relative;
+  height: auto;
+  border-radius: 25px;
+
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
+}
 
 .banner-title {
-  color: #fff;
   font-size: 48px;
   font-weight: 500;
-  z-index: 1;
+
+  position: relative;
+  bottom: 180px;
+  text-align: center;
+  background-color: rgba(0,0,0,.3);
+}
+
+.banner-image {
+  background-color: rgba(0,0,0,.3);
+  object-fit: contain;
 }
 
 
@@ -226,6 +250,44 @@ footer p {
 
 
 
+/* COMPOSANT : ACCORDEON */
+
+.accordeon {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+.accordeon-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #000;
+  background-color: #ff6060;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 12px 24px;
+  z-index: 10;
+
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+.accordeon-description {
+  background-color: #f6f6f6;
+  border-radius: 0 0 12px 12px;
+  padding: 32px 20px;
+  margin: 0;
+  color: #ff6060;
+  font-size: 24px;
+
+}
+
+
+
 /* PAGE : LOGEMENT */
 
 .title-location h1 {
@@ -240,6 +302,61 @@ footer p {
   color: #ff6060;
 }
 
+.logement-tags {
+  display: flex;
+  gap: 12px;
+}
+
+.title-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.informations-logement {
+  display: flex;
+  justify-content: space-between;
+}
+
+.informations-logement .accordeon {
+  width: 45%;
+  margin: 0;
+}
+
+.informations {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.author img {
+  border-radius: 50%;
+  height: 64px;
+  object-fit: cover;
+  width: 64px;
+}
+
+.rating {
+  display: flex;
+  gap: 12px;
+}
+
+.rating img  {
+  width: 32px;
+}
 
 
 
