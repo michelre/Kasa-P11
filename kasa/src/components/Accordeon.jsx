@@ -6,14 +6,11 @@ const Accordeon = ({title, children}) => {
 
     const [display, setDisplay] = useState(false)
 
+
     return <div className='accordeon'>
                 <div className="according-container">
                     <span className='accordeon-header' onClick={() => setDisplay(!display)}>{title}
-                        {display === title ? (
-                                <img src={UpArrow} alt="uparrow" />
-                            ) : (
-                                <img src={DownArrow} alt="downarrow" />
-                        )}
+                        <img src={UpArrow} alt="uparrow" className={display ? 'rotate' : ''}  />
                     </span>
                     <div className='accordeon-description' style={{display: display ? 'block' : 'none'}}>{children}</div>
                 </div>
