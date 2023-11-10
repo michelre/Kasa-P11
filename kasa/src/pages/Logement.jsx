@@ -4,6 +4,8 @@ import Accordeon from "../components/Accordeon.jsx";
 import Author from "../components/Author.jsx";
 import Stars from '../components/Stars.jsx';
 import Tags from "../components/Tags";
+import Slider from "../components/Slider";
+import Footer from "../components/Footer.jsx"
 import {useEffect, useState} from "react";
 
 const Logement = () => {
@@ -30,6 +32,8 @@ const Logement = () => {
 
     return logement && <div>
         <Header/>
+
+        <Slider pictures={logement.pictures}/>
 
         <section className="informations">
             <div className="title-location">
@@ -59,15 +63,14 @@ const Logement = () => {
                 title={'Equipements'}
             >
                 <ul>
-                    <li>{logement.equipments}</li>
+                    {logement.equipments.map((e, idx) => <li key={`equipment-${idx}`}>{e}</li>)}
                 </ul>
             </Accordeon>
         </section>
 
+        <Footer/>
 
     </div>
-
-
 
 }
 export default Logement
