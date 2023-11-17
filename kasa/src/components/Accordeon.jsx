@@ -1,10 +1,15 @@
-import {useState} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import UpArrow from "../assets/chevron-up.png";
 import DownArrow from "../assets/chevron-down.png";
 
-const Accordeon = ({title, children}) => {
+const Accordeon = ({title, children, opened}) => {
 
-    const [display, setDisplay] = useState(false)
+    const [display, setDisplay] = useState(null)
+    const accordeonContent = useRef(null)
+
+    useEffect(() => {
+        setDisplay(opened)
+    }, [])
 
 
     return <div className='accordeon'>
@@ -12,7 +17,12 @@ const Accordeon = ({title, children}) => {
                     <span className='accordeon-header' onClick={() => setDisplay(!display)}>{title}
                         <img src={UpArrow} alt="uparrow" className={display ? 'rotate' : ''}  />
                     </span>
-                    <div className='accordeon-description' style={{display: display ? 'block' : 'none'}}>{children}</div>
+                    <div
+                        className='accordeon-description'
+                        style={{height: display ? `${accordeonContent.current.clientHeight + 40}px` : '0'}}
+                    >
+                        <div ref={accordeonContent}>{children}</div>
+                    </div>
                 </div>
             </div>
 }
