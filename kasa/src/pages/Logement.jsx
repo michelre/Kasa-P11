@@ -5,6 +5,7 @@ import Author from "../components/Author.jsx";
 import Stars from '../components/Stars.jsx';
 import Tags from "../components/Tags";
 import Slider from "../components/Slider";
+import Footer from "../components/Footer.jsx"
 import {useEffect, useState} from "react";
 
 const Logement = () => {
@@ -33,7 +34,6 @@ const Logement = () => {
         <Header/>
 
         <Slider pictures={logement.pictures}/>
-
 
         <section className="informations">
             <div className="title-location">
@@ -68,10 +68,9 @@ const Logement = () => {
             </Accordeon>
         </section>
 
+        <Footer/>
 
     </div>
-
-
 
 }
 export default Logement

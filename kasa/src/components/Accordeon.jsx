@@ -17,5 +17,4 @@ const Accordeon = ({title, children}) => {
             </div>
 }
 
-
 export default Accordeon;

@@ -16,7 +16,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div>
+        <div className="home-container">
             <Header />
             <Banner
                 image={'../src/assets/hero-banner.jpg'}

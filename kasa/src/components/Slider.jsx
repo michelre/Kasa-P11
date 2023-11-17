@@ -1,10 +1,8 @@
 import {useState} from 'react'
 import PropTypes from 'prop-types';
 
-
 const Slider = ({pictures}) => {
     const [idx, setIdx] = useState(0)
-
 
     const previous = () => {
         if(idx === 0){
@@ -21,7 +19,6 @@ const Slider = ({pictures}) => {
         }
         setIdx(idx + 1)
     }
-
 
     return <div>
         <button onClick={() => previous()}>&lt;</button>
