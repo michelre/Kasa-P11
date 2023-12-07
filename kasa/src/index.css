@@ -3,8 +3,6 @@
 
 :root {
     font-family: 'Montserrat', sans-serif;
-    width: 80%;
-    margin: auto;
 }
 
 
@@ -33,6 +31,7 @@ header {
     align-items: center;
     padding-top: 3%;
     padding-bottom: 5%;
+    width: 80%;
 }
 
 nav {
@@ -86,6 +85,7 @@ footer {
     padding: 25px 0;
     width: 100%;
     margin: 0;
+    text-align: center;
 }
 
 
@@ -148,6 +148,7 @@ footer p {
     background-color: #f6f6f6;
     border-radius: 24px;
     padding: 48px;
+    width: 80%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -216,7 +217,7 @@ footer p {
     height: 200px;
     border-radius: 25px;
     overflow: hidden;
-    width: 100%;
+    width: 80%;
     margin: auto;
     margin-bottom: 5%;
 }
@@ -303,7 +304,6 @@ footer p {
 }
 
 .accordeon-header {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -323,11 +323,15 @@ footer p {
 .accordeon-description {
     background-color: #f6f6f6;
     border-radius: 0 0 12px 12px;
-    padding: 32px 20px;
     margin: 0;
     color: #ff6060;
     font-size: 24px;
-
+    height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: height .5s linear;
+    position: relative;
+    top: -10px;
 }
 
 .accordeon img {
@@ -370,6 +374,9 @@ footer p {
 .informations-logement {
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5%;
 }
 
 .informations-logement .accordeon {
@@ -380,7 +387,9 @@ footer p {
 .informations {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4%;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 4%;
 }
 
 .author {
@@ -469,9 +478,10 @@ button:focus-visible {
 
 /* SLider */
 .slider {
-    width: 100%;
+    width: 80%;
     height: 300px;
     overflow: hidden;
+    margin: auto;
 }
 
 .slider-container {
@@ -485,4 +495,9 @@ button:focus-visible {
     display: block;
     flex-shrink: 0;
     object-fit: cover;
+}
+
+.about-container {
+    margin: auto;
+    margin-bottom: 3%;
 }
