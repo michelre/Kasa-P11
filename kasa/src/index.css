@@ -244,7 +244,7 @@ footer p {
 }
 
 .banner-image {
-    background-color: rgba(0, 0, 0, .3);
+    /* background-color: rgba(0, 0, 0, .3);*/
     object-fit: contain;
 }
 
@@ -477,11 +477,16 @@ button:focus-visible {
 */
 
 /* SLider */
+.caroussel {
+    margin-bottom: 5%;
+}
+
 .slider {
     width: 80%;
     height: 300px;
     overflow: hidden;
     margin: auto;
+    border-radius: 24px;
 }
 
 .slider-container {
@@ -495,6 +500,46 @@ button:focus-visible {
     display: block;
     flex-shrink: 0;
     object-fit: cover;
+}
+
+.slider-infos {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;    
+    position: relative;
+}
+
+.slider-infos a {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,.4));
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.4));
+}
+
+.slider-chevron-left {
+    position: absolute;
+    left: 30px;
+    top: -200px
+}
+
+.slider-chevron-right {
+    position: absolute;
+    right: 30px;
+    top: -200px
+}
+
+.caroussel p {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    top: -50px;
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,.4));
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.4));
 }
 
 .about-container {
