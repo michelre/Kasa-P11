@@ -240,7 +240,7 @@ footer p {
     align-items: center;
     height: 100%;
     width: 100%;
-  text-align: center;
+    text-align: center;
 }
 
 .banner-image {
@@ -540,6 +540,18 @@ button:focus-visible {
     top: -50px;
     -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,.4));
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,.4));
+}
+
+@media screen and (max-width: 780px) {
+
+    .caroussel .banner-image {
+        width: 50%;
+    }
+
+    .slider-chevron-left, .slider-chevron-right{
+        top: -180px;
+    }
+
 }
 
 .about-container {
