@@ -1,0 +1,45 @@
+.accordeon {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.accordeon-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #000;
+    background-color: #ff6060;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 12px 24px;
+    z-index: 10;
+
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.accordeon-description {
+    background-color: #f6f6f6;
+    border-radius: 0 0 12px 12px;
+    margin: 0;
+    color: #ff6060;
+    font-size: 24px;
+    height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: height .5s linear;
+    position: relative;
+    top: -10px;
+}
+
+.accordeon img {
+    display: block;
+    transition: transform .5s linear;
+}
+
+.accordeon img.rotate {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,21 @@
+.tag {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    background-color: #ff6060;
+    border-radius: 8px;
+    justify-content: center;
+    min-width: 112px;
+    padding: 0 16px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.tag-name {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

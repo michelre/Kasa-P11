@@ -1,6 +1,6 @@
 import {useEffect, useRef, useState} from 'react'
-import UpArrow from "../assets/chevron-up.png";
-import DownArrow from "../assets/chevron-down.png";
+import UpArrow from "../../assets/chevron-up.png";
+import "./Accordeon.css";
 
 const Accordeon = ({title, children, opened}) => {
 

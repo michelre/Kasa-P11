@@ -1,6 +1,7 @@
-import Header from '../components/Header.jsx'
-import Footer from '../components/Footer.jsx'
+import Header from '../../components/Header/Header.jsx'
+import Footer from '../../components/Footer/Footer.jsx'
 import { Link } from 'react-router-dom'
+import "./404.css";
 
 const Error = () => {
     return <div>

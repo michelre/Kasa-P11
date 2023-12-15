@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Author.css";
 
 // Ajouter un call sur le fichier JSON pour récupérer les datas au niveau de l'HOST pour ensuite en extraire le name + picture
 
@@ -16,4 +17,4 @@ const Author = ({ name, picture }) => {
     );
 }
 
-export default Author;
+export default Author; 
