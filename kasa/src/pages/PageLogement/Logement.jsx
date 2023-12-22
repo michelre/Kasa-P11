@@ -7,29 +7,27 @@ import Tags from "../../components/Tags/Tags.jsx";
 import Slider from "../../components/Slider/Slider.jsx";
 import Footer from "../../components/Footer/Footer.jsx"
 import {useEffect, useState} from "react";
+import {Navigate} from 'react-router-dom'
 import "./Logement.css";
 
 const Logement = () => {
 
     const params = useParams()
-    const [logement, setLogement] = useState(null)
+    const [logement, setLogement] = useState(false)
 
     useEffect(() => {
         fetch('/logements.json')
             .then(d => d.json())
             .then(data => {
-                data.forEach(d => {
-                    if (d.id === params.id)
-                    {
-                        setLogement(d)
-                    }
-                });
+                const l = data.find(d => d.id === params.id)
+                setLogement(l)
             })
     }, [])
 
-    /*if(!logement){
-        return null
-    }*/
+
+    if(logement === undefined){
+        return <Navigate to={'/404'}/>
+    }
 
     return logement && <div>
         <Header/>
@@ -40,7 +38,7 @@ const Logement = () => {
             <div className="title-location">
                 <h1>{logement.title}</h1>
                 <h2>{logement.location}</h2>
-            
+
                 <div className="logement-tags">
                     {logement?.tags.map((tag) => (
                         <Tags name={tag} key={tag}/>
