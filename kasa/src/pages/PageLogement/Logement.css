@@ -64,3 +64,48 @@
     object-fit: cover;
     width: 64px;
 }
+
+
+@media screen and (max-width: 780px) {
+
+    .informations {
+        flex-direction: column;
+    }
+
+    .title-location h1 {
+        font-size: 18px;
+    }
+
+    .title-location h2 {
+        font-size: 12px;
+    }
+
+    .tag {
+        min-width: 0;
+    }
+
+    .tag-name {
+        font-size: 10px;
+    }
+
+    .title-author {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .author-name {
+        font-size: 12px;
+    }
+
+    .author img {
+        height: 32px;
+        width: 32px;
+    }
+
+    .rating img {
+        width: 16px;
+    }
+
+}
