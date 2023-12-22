@@ -1,8 +1,9 @@
-import Header from "../components/Header.jsx";
-import Banner from '../components/Banner.jsx';
-import Thumbnail from "../components/Thumbnail.jsx";
-import Footer from "../components/Footer.jsx";
+import Header from "../../components/Header/Header.jsx";
+import Banner from '../../components/Banner/Banner.jsx';
+import Thumbnail from "../../components/Thumbnail/Thumbnail.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 import {useEffect, useState} from "react";
+import "./Home.css";
 
 const Home = () => {
     const [logements, setLogements] = useState([]);

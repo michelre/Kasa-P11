@@ -1,3 +1,5 @@
+import "./Tags.css";
+
 const Tags = ({name}) => {
 
     return (

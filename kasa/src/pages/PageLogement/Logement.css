@@ -1,0 +1,111 @@
+.title-location h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #ff6060;
+}
+
+.title-location h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff6060;
+}
+
+.logement-tags {
+    display: flex;
+    gap: 12px;
+}
+
+.title-author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 15px;
+}
+
+.informations-logement {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.informations-logement .accordeon {
+    width: 45%;
+    margin: 0;
+}
+
+.informations {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 4%;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-name {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.author img {
+  border-radius: 50%;
+    height: 64px;
+    object-fit: cover;
+    width: 64px;
+}
+
+
+@media screen and (max-width: 780px) {
+
+    .informations {
+        flex-direction: column;
+    }
+
+    .title-location h1 {
+        font-size: 18px;
+    }
+
+    .title-location h2 {
+        font-size: 12px;
+    }
+
+    .tag {
+        min-width: 0;
+    }
+
+    .tag-name {
+        font-size: 10px;
+    }
+
+    .title-author {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .author-name {
+        font-size: 12px;
+    }
+
+    .author img {
+        height: 32px;
+        width: 32px;
+    }
+
+    .rating img {
+        width: 16px;
+    }
+
+}

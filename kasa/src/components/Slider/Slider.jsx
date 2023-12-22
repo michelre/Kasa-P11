@@ -1,7 +1,8 @@
 import {useState} from 'react'
 import PropTypes from 'prop-types';
-import LeftArrow from "../assets/chevron-left.svg";
-import RightArrow from "../assets/chevron-right.svg";
+import LeftArrow from "../../assets/chevron-left.svg";
+import RightArrow from "../../assets/chevron-right.svg";
+import "./Slider.css";
 
 const Slider = ({pictures}) => {
     const [idx, setIdx] = useState(0)

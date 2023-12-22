@@ -1,7 +1,8 @@
-import Header from "../components/Header.jsx";
-import Banner from '../components/Banner.jsx';
-import Accordeon from "../components/Accordeon.jsx";
-import Footer from "../components/Footer.jsx";
+import Header from "../../components/Header/Header.jsx";
+import Banner from '../../components/Banner/Banner.jsx';
+import Accordeon from "../../components/Accordeon/Accordeon.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
+import "./About.css";
 
 const About = () => {
     return <div>

@@ -1,12 +1,13 @@
-import Header from "../components/Header.jsx";
+import Header from "../../components/Header/Header.jsx";
 import {useParams} from "react-router-dom";
-import Accordeon from "../components/Accordeon.jsx";
-import Author from "../components/Author.jsx";
-import Stars from '../components/Stars.jsx';
-import Tags from "../components/Tags";
-import Slider from "../components/Slider";
-import Footer from "../components/Footer.jsx"
+import Accordeon from "../../components/Accordeon/Accordeon.jsx";
+import Author from "../../components/Author/Author.jsx";
+import Stars from '../../components/Stars/Stars.jsx';
+import Tags from "../../components/Tags/Tags.jsx";
+import Slider from "../../components/Slider/Slider.jsx";
+import Footer from "../../components/Footer/Footer.jsx"
 import {useEffect, useState} from "react";
+import "./Logement.css";
 
 const Logement = () => {
 

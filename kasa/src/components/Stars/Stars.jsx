@@ -1,6 +1,7 @@
 import React from 'react';
-import fullStar from '../assets/full_star.svg';
-import emptyStar from '../assets/empty_star.svg';
+import fullStar from '../../assets/full_star.svg';
+import emptyStar from '../../assets/empty_star.svg';
+import "./Stars.css";
 
 // Méthode 1 : Boucle
 

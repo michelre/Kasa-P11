@@ -1,0 +1,45 @@
+header {
+    height: 68px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    width: 80%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+nav a {
+    font-size: 24px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    color: #FF6060;
+}
+
+@media screen and (max-width: 780px) {
+
+    #header-logo {
+        width: 60%;
+    }
+
+    nav {
+        width: 150px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+}
